@@ -4,14 +4,41 @@
         <title>Web文書のセマンティクスの表現</title>
     </head>
     <body>
-        <p>
-            <a href="https://developer.mozilla.org/ja/docs/Glossary/Semantics#html_%E3%81%A7%E3%81%AE%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9">MDN Web Docs 用語集: ウェブ関連用語の定義
-                Semantics (セマンティクス)</a>
-        </p>
-        <p>
-            whatwg.org<br>
-            <a href="https://html.spec.whatwg.org/multipage/semantics.html#document-metadata">4.2 Document metadata</a><br>
-            <a href="https://html.spec.whatwg.org/multipage/sections.html#sections">4.3 Sections</a>
-        </p>
+        <header><!-- header要素は導入部やナビゲーションを配置する -->
+            <h1>Web文書のセマンティクスの表現</h1>
+        </header>
+
+        <main><!--main要素は、body要素の主要な内容を示す。-->
+            <article><!-- 文書、ページ、アプリケーション、サイトなどの中で自己完結しており、 (集合したものの中で) 個別に配信や再利用を行うことを意図した構成物を表す。 -->
+                <h1>記事</h1>
+                <article>
+                    <h2>子記事</h2>
+                    <h3>セクション</h3>
+                    <section><!-- 文書の自立した一般的なセクション (区間) を表す。 -->
+                        <h4>セクションの見出し</h4>
+                        <p>セクションのコンテンツ</p>
+                        <p>
+                            <a href="https://developer.mozilla.org/ja/docs/Glossary/Semantics#html_%E3%81%A7%E3%81%AE%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9">MDN Web Docs 用語集: ウェブ関連用語の定義
+                                Semantics (セマンティクス)</a>
+                        </p>
+                        <p>
+                            whatwg.org<br>
+                            <a href="https://html.spec.whatwg.org/multipage/semantics.html#document-metadata">4.2 Document metadata</a><br>
+                            <a href="https://html.spec.whatwg.org/multipage/sections.html#sections">4.3 Sections</a>
+                        </p>
+            
+                        <details><!-- ウィジェットが「開いた」状態になった時のみ情報が表示される折りたたみウィジェットを作成する -->
+                            <!-- <summary> は HTML の要素で、 <details> 要素の折り畳みボックスの要約、キャプション、説明、凡例を表す。 -->
+                            <summary>detailsのsummary</summary>
+                            detailsのコンテンツ
+                        </details>
+                    </section>
+                </article>
+            </article>
+        </main>
+
+        <footer><!-- フッターには通常、そのセクションの著作者に関する情報、関連文書へのリンク、著作権情報等を含める -->
+            footer
+        </footer>
     </body>
 </html>
